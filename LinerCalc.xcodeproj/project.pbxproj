@@ -13,6 +13,13 @@
 		DF0B675727CED54F0020FA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0B675527CED54F0020FA27 /* Main.storyboard */; };
 		DF0B675927CED5550020FA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0B675827CED5550020FA27 /* Assets.xcassets */; };
 		DF0B675C27CED5550020FA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0B675A27CED5550020FA27 /* LaunchScreen.storyboard */; };
+		DF0B676427CEDD6C0020FA27 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B676327CEDD6C0020FA27 /* InfoViewController.swift */; };
+		DF0B676A27CEDDD00020FA27 /* twoVariableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B676927CEDDD00020FA27 /* twoVariableViewController.swift */; };
+		DF0B676C27CEDDDD0020FA27 /* threeVariableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B676B27CEDDDD0020FA27 /* threeVariableViewController.swift */; };
+		DF0B676E27CF74D50020FA27 /* twoVariableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B676D27CF74D50020FA27 /* twoVariableModel.swift */; };
+		DF0B677027CF74E40020FA27 /* threeVariableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B676F27CF74E40020FA27 /* threeVariableModel.swift */; };
+		DF0B677227CFE1080020FA27 /* fourVariableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B677127CFE1080020FA27 /* fourVariableViewController.swift */; };
+		DF0B677427CFE11C0020FA27 /* fourVariableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B677327CFE11C0020FA27 /* fourVariableModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		DF0B675827CED5550020FA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0B675B27CED5550020FA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0B675D27CED5550020FA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF0B676327CEDD6C0020FA27 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		DF0B676927CEDDD00020FA27 /* twoVariableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoVariableViewController.swift; sourceTree = "<group>"; };
+		DF0B676B27CEDDDD0020FA27 /* threeVariableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeVariableViewController.swift; sourceTree = "<group>"; };
+		DF0B676D27CF74D50020FA27 /* twoVariableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoVariableModel.swift; sourceTree = "<group>"; };
+		DF0B676F27CF74E40020FA27 /* threeVariableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threeVariableModel.swift; sourceTree = "<group>"; };
+		DF0B677127CFE1080020FA27 /* fourVariableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourVariableViewController.swift; sourceTree = "<group>"; };
+		DF0B677327CFE11C0020FA27 /* fourVariableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourVariableModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +72,14 @@
 			children = (
 				DF0B674F27CED54F0020FA27 /* AppDelegate.swift */,
 				DF0B675127CED54F0020FA27 /* SceneDelegate.swift */,
+				DF0B676D27CF74D50020FA27 /* twoVariableModel.swift */,
+				DF0B676F27CF74E40020FA27 /* threeVariableModel.swift */,
+				DF0B677327CFE11C0020FA27 /* fourVariableModel.swift */,
 				DF0B675327CED54F0020FA27 /* ViewController.swift */,
+				DF0B676327CEDD6C0020FA27 /* InfoViewController.swift */,
+				DF0B676927CEDDD00020FA27 /* twoVariableViewController.swift */,
+				DF0B676B27CEDDDD0020FA27 /* threeVariableViewController.swift */,
+				DF0B677127CFE1080020FA27 /* fourVariableViewController.swift */,
 				DF0B675527CED54F0020FA27 /* Main.storyboard */,
 				DF0B675827CED5550020FA27 /* Assets.xcassets */,
 				DF0B675A27CED5550020FA27 /* LaunchScreen.storyboard */,
@@ -138,9 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0B677227CFE1080020FA27 /* fourVariableViewController.swift in Sources */,
+				DF0B676E27CF74D50020FA27 /* twoVariableModel.swift in Sources */,
 				DF0B675427CED54F0020FA27 /* ViewController.swift in Sources */,
+				DF0B677027CF74E40020FA27 /* threeVariableModel.swift in Sources */,
 				DF0B675027CED54F0020FA27 /* AppDelegate.swift in Sources */,
+				DF0B677427CFE11C0020FA27 /* fourVariableModel.swift in Sources */,
+				DF0B676427CEDD6C0020FA27 /* InfoViewController.swift in Sources */,
+				DF0B676A27CEDDD00020FA27 /* twoVariableViewController.swift in Sources */,
 				DF0B675227CED54F0020FA27 /* SceneDelegate.swift in Sources */,
+				DF0B676C27CEDDDD0020FA27 /* threeVariableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
