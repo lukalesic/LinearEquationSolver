@@ -58,6 +58,7 @@ class twoVarModel{
         var bSolutionCount:   LAInt = 1
         var outputOk: LAInt = 0
         var pivot = [LAInt](repeating: 0, count: equations)
+        
          
         sgesv_( &numberOfEquations, &bSolutionCount, &A, &columnsInA, &pivot, &b, &elementsInB, &outputOk)
          

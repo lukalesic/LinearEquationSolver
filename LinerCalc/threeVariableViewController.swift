@@ -47,7 +47,7 @@ class threeVariableViewController: UIViewController {
         
         
         
-        let threeMod = threeVarModel(tx1: tx1!, tx2: tx2!, tx3: tx3!, ty1: ty1!, ty2: ty2!, ty3: ty3!, tz1: tz1!, tz2: tz2!, tz3: tz3!, trj1: trj1!, trj2: trj2!, trj3: trj3!)
+        let threeMod = threeVarModel(tx1: tx1 ?? 0, tx2: tx2 ?? 0, tx3: tx3 ?? 0, ty1: ty1 ?? 0, ty2: ty2 ?? 0, ty3: ty3 ?? 0, tz1: tz1 ?? 0, tz2: tz2 ?? 0, tz3: tz3 ?? 0, trj1: trj1 ?? 0, trj2: trj2 ?? 0, trj3: trj3 ?? 0)
         
         threerjesenjeplaceholder.text=threeMod.threeVarSolve().description
         

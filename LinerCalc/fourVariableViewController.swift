@@ -80,7 +80,7 @@ class fourVariableViewController: UIViewController {
         
         
         
-        let fourMod = fourVarModel(fx1: fx1!, fx2: fx2!, fx3: fx3!, fx4: fx4!, fy1: fy1!, fy2: fy2!, fy3: fy3!, fy4: fy4!, fz1: fz1!, fz2: fz2!, fz3: fz3!, fz4: fz4!, fm1: fm1!, fm2: fm2!, fm3: fm3!, fm4: fm4!, frj1: frj1!, frj2: frj2!, frj3: frj3!, frj4: frj4!)
+        let fourMod = fourVarModel(fx1: fx1 ?? 0, fx2: fx2 ?? 0, fx3: fx3 ?? 0, fx4: fx4 ?? 0, fy1: fy1 ?? 0, fy2: fy2 ?? 0, fy3: fy3 ?? 0, fy4: fy4 ?? 0, fz1: fz1 ?? 0, fz2: fz2 ?? 0, fz3: fz3 ?? 0, fz4: fz4 ?? 0, fm1: fm1 ?? 0, fm2: fm2 ?? 0, fm3: fm3 ?? 0, fm4: fm4 ?? 0, frj1: frj1 ?? 0, frj2: frj2 ?? 0, frj3: frj3 ?? 0, frj4: frj4 ?? 0)
         
         fResultLabel.text=fourMod.fourVarSolve().description
         

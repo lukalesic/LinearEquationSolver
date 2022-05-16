@@ -33,10 +33,8 @@ class twoVariableViewController: UIViewController {
         
         
         
-        let twoMod = twoVarModel(dx1: dx1!, dx2: dx2!,  dy1: dy1!, dy2: dy2!,  drj1: drj1!, drj2: drj2!)
-        
+        let twoMod = twoVarModel(dx1: dx1 ?? 0, dx2: dx2 ?? 0,  dy1: dy1 ?? 0, dy2: dy2 ?? 0,  drj1: drj1 ?? 0, drj2: drj2 ?? 0)
         twoResultLabel.text=twoMod.twoVarSolve().description
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
