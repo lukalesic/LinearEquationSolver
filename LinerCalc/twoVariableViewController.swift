@@ -39,6 +39,10 @@ class twoVariableViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
