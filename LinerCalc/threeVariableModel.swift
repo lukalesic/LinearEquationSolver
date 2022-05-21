@@ -74,7 +74,15 @@ class threeVarModel{
          
         sgesv_( &numberOfEquations, &bSolutionCount, &A, &columnsInA, &pivot, &b, &elementsInB, &outputOk)
          
+        var x1 = tx3/tx2/tx1
+        var y1 = ty3/ty2/ty1
+        var z1 = tz3/tz2/tz1
+        var rj1 = trj3/trj2/trj1
         
+        print(x1)
+        print(y1)
+        print(z1)
+        print(rj1)
         
         if outputOk == 0 {
             
@@ -84,7 +92,9 @@ class threeVarModel{
         
         else {
             
-            return "System with infinite solutions!"
+            if x1==y1 && y1==rj1 { return "System with infinite solutions!"}
+            
+            else{  return "System with no solutions!"}
             
         }
         

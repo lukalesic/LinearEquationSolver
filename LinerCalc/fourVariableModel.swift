@@ -85,7 +85,17 @@ class fourVarModel{
          
         sgesv_( &numberOfEquations, &bSolutionCount, &A, &columnsInA, &pivot, &b, &elementsInB, &outputOk)
         
+        var x1 = fx4/fx3/fx2/fx1
+        var y1 = fy3/fy3/fy2/fy1
+        var z1 = fz4/fz3/fz2/fz1
+        var m1 = fm4/fm3/fm2/fm1
+        var rj1 = frj4/frj3/frj2/frj1
         
+        print(x1)
+        print(y1)
+        print(z1)
+        print(m1)
+        print(rj1)
         
         
         if outputOk == 0 {
@@ -96,7 +106,8 @@ class fourVarModel{
         
         else {
             
-            return "System with infinite solutions!"
+            if x1==y1 && y1==z1 && z1==m1 && m1==rj1 { return "System with infinite solutions!"}
+            else {return "System with no solutions!"}
             
         }
         
