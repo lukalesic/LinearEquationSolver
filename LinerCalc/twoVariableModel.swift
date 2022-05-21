@@ -65,28 +65,21 @@ class twoVarModel{
         // If outputOK = 0, then everything went ok
       //  outputOk
         
-       
+       var x1 = dx2/dx1
+        var y1 = dy2/dy1
+        var rj1 = drj2/drj1
        
        
         if outputOk == 0 {
-            
             return " X = \(String(format: "%.2f", b[0])), Y = \(String(format: "%.2f", b[1]))"
-
-            
         }
         
         else {
-            
-            return "System with infinite solutions!"
-            
+            if x1==y1 && y1==rj1 {return "System with infinite solutions!"}
+            else {            return "System with no solutions!"}
         }
-        
-        
-
-        
+  
     }
-    
- 
     
     /*
      
