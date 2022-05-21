@@ -92,7 +92,7 @@ class threeVarModel{
         
         else {
             
-            if x1==y1 && y1==rj1 { return "System with infinite solutions!"}
+            if x1==y1 && y1==z1 && z1==rj1 { return "System with infinite solutions!"}
             
             else{  return "System with no solutions!"}
             

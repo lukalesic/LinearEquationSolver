@@ -8,22 +8,22 @@
 import UIKit
 
 class threeVariableViewController: UIViewController {
-    @IBOutlet weak var threex1Field: UITextField!
+    @IBOutlet weak var threex1Field: UITextField! { didSet{threex1Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var threex2Field: UITextField!
-    @IBOutlet weak var threex3Field: UITextField!
-    @IBOutlet weak var threerj1Field: UITextField!
+    @IBOutlet weak var threex2Field: UITextField!{ didSet{threex2Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threex3Field: UITextField!{ didSet{threex3Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threerj1Field: UITextField!{ didSet{threerj1Field?.addNumericAccessory(addPlusMinus: true)}}
   
     
-    @IBOutlet weak var threey1Field: UITextField!
-    @IBOutlet weak var threey2Field: UITextField!
-    @IBOutlet weak var threey3Field: UITextField!
-    @IBOutlet weak var threerj2Field: UITextField!
+    @IBOutlet weak var threey1Field: UITextField!{ didSet{threey1Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threey2Field: UITextField!{ didSet{threey2Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threey3Field: UITextField!{ didSet{threey3Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threerj2Field: UITextField!{ didSet{threerj2Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var threez1Field: UITextField!
-    @IBOutlet weak var threez2Field: UITextField!
-    @IBOutlet weak var threez3Field: UITextField!
-    @IBOutlet weak var threerj3Field: UITextField!
+    @IBOutlet weak var threez1Field: UITextField!{ didSet{threez1Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threez2Field: UITextField!{ didSet{threez2Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threez3Field: UITextField!{ didSet{threez3Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var threerj3Field: UITextField!{ didSet{threerj3Field?.addNumericAccessory(addPlusMinus: true)}}
     @IBOutlet weak var threerjesenjeplaceholder: UILabel!
     
     

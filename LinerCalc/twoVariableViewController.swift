@@ -7,14 +7,61 @@
 
 import UIKit
 
+extension UITextField {
+
+func addNumericAccessory(addPlusMinus: Bool) {
+    let numberToolbar = UIToolbar()
+    numberToolbar.barStyle = UIBarStyle.default
+
+    var accessories : [UIBarButtonItem] = []
+
+    if addPlusMinus {
+        accessories.append(UIBarButtonItem(title: "+/-", style: UIBarButtonItem.Style.plain, target: self, action: #selector(plusMinusPressed)))
+        accessories.append(UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil))   //add padding after
+    }
+
+    accessories.append(UIBarButtonItem(title: "Clear", style: UIBarButtonItem.Style.plain, target: self, action: #selector(numberPadClear)))
+    accessories.append(UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil))   //add padding space
+    accessories.append(UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target: self, action: #selector(numberPadDone)))
+
+    numberToolbar.items = accessories
+    numberToolbar.sizeToFit()
+
+    inputAccessoryView = numberToolbar
+}
+
+@objc func numberPadDone() {
+    self.resignFirstResponder()
+}
+
+@objc func numberPadClear() {
+    self.text = ""
+}
+
+@objc func plusMinusPressed() {
+    guard let currentText = self.text else {
+        return
+    }
+    if currentText.hasPrefix("-") {
+        let offsetIndex = currentText.index(currentText.startIndex, offsetBy: 1)
+        let substring = currentText[offsetIndex...]  //remove first character
+        self.text = String(substring)
+    }
+    else {
+        self.text = "-" + currentText
+    }
+}
+
+}
+
 class twoVariableViewController: UIViewController {
 
-    @IBOutlet weak var twox1Field: UITextField!
-    @IBOutlet weak var twox2Field: UITextField!
-    @IBOutlet weak var tworj1Field: UITextField!
-    @IBOutlet weak var twoy1Fied: UITextField!
-    @IBOutlet weak var twoy2Field: UITextField!
-    @IBOutlet weak var tworj2Field: UITextField!
+    @IBOutlet weak var twox1Field: UITextField! { didSet{twox1Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var twox2Field: UITextField!{ didSet{twox2Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var tworj1Field: UITextField!{ didSet{tworj1Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var twoy1Fied: UITextField!{ didSet{twoy1Fied?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var twoy2Field: UITextField!{ didSet{twoy2Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var tworj2Field: UITextField!{ didSet{tworj2Field?.addNumericAccessory(addPlusMinus: true)}}
     @IBOutlet weak var twoResultLabel: UILabel!
     
     
@@ -47,6 +94,9 @@ class twoVariableViewController: UIViewController {
         title = "Two variable calculator"
 
         // Do any additional setup after loading the view.
+        
+        
+        
     }
     
 

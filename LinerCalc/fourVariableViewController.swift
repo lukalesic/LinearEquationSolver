@@ -9,43 +9,43 @@ import UIKit
 
 class fourVariableViewController: UIViewController {
 
-    @IBOutlet weak var fx1Field: UITextField!
-    @IBOutlet weak var fy1Field: UITextField!
-    @IBOutlet weak var fz1Field: UITextField!
-    @IBOutlet weak var fm1Field: UITextField!
+    @IBOutlet weak var fx1Field: UITextField!{ didSet{fx1Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var fy1Field: UITextField!{ didSet{fy1Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var fz1Field: UITextField!{ didSet{fz1Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var fm1Field: UITextField!{ didSet{fm1Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var frj1Field: UITextField!
-    
-    
-    @IBOutlet weak var fx2Field: UITextField!
-    
-    @IBOutlet weak var fy2Field: UITextField!
-    @IBOutlet weak var fz2Field: UITextField!
-    
-    @IBOutlet weak var fm2Field: UITextField!
-    @IBOutlet weak var frj2Field: UITextField!
+    @IBOutlet weak var frj1Field: UITextField!{ didSet{frj1Field?.addNumericAccessory(addPlusMinus: true)}}
     
     
-    @IBOutlet weak var fx3Field: UITextField!
+    @IBOutlet weak var fx2Field: UITextField!{ didSet{fx2Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var fy3Field: UITextField!
+    @IBOutlet weak var fy2Field: UITextField!{ didSet{fy2Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var fz2Field: UITextField!{ didSet{fz2Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var fz3Field: UITextField!
-    
-    @IBOutlet weak var fm3Field: UITextField!
-    
-    @IBOutlet weak var frj3Field: UITextField!
+    @IBOutlet weak var fm2Field: UITextField!{ didSet{fm2Field?.addNumericAccessory(addPlusMinus: true)}}
+    @IBOutlet weak var frj2Field: UITextField!{ didSet{frj2Field?.addNumericAccessory(addPlusMinus: true)}}
     
     
-    @IBOutlet weak var fx4Field: UITextField!
+    @IBOutlet weak var fx3Field: UITextField!{ didSet{fx3Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var fy4Field: UITextField!
+    @IBOutlet weak var fy3Field: UITextField!{ didSet{fy3Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var fz4Field: UITextField!
+    @IBOutlet weak var fz3Field: UITextField!{ didSet{fz3Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var fm4Field: UITextField!
+    @IBOutlet weak var fm3Field: UITextField!{ didSet{fm3Field?.addNumericAccessory(addPlusMinus: true)}}
     
-    @IBOutlet weak var frj4Field: UITextField!
+    @IBOutlet weak var frj3Field: UITextField!{ didSet{frj3Field?.addNumericAccessory(addPlusMinus: true)}}
+    
+    
+    @IBOutlet weak var fx4Field: UITextField!{ didSet{fx4Field?.addNumericAccessory(addPlusMinus: true)}}
+    
+    @IBOutlet weak var fy4Field: UITextField!{ didSet{fy4Field?.addNumericAccessory(addPlusMinus: true)}}
+    
+    @IBOutlet weak var fz4Field: UITextField!{ didSet{fz4Field?.addNumericAccessory(addPlusMinus: true)}}
+    
+    @IBOutlet weak var fm4Field: UITextField!{ didSet{fm4Field?.addNumericAccessory(addPlusMinus: true)}}
+    
+    @IBOutlet weak var frj4Field: UITextField!{ didSet{frj4Field?.addNumericAccessory(addPlusMinus: true)}}
     
     
     @IBOutlet weak var fResultLabel: UILabel!

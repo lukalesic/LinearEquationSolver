@@ -86,7 +86,7 @@ class fourVarModel{
         sgesv_( &numberOfEquations, &bSolutionCount, &A, &columnsInA, &pivot, &b, &elementsInB, &outputOk)
         
         var x1 = fx4/fx3/fx2/fx1
-        var y1 = fy3/fy3/fy2/fy1
+        var y1 = fy4/fy3/fy2/fy1
         var z1 = fz4/fz3/fz2/fz1
         var m1 = fm4/fm3/fm2/fm1
         var rj1 = frj4/frj3/frj2/frj1

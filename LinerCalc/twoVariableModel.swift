@@ -24,17 +24,9 @@ class twoVarModel{
     
    
     init(dx1: Float, dx2: Float, dy1: Float, dy2: Float, drj1: Float, drj2: Float){
-        
-        
         self.dx1 = dx1;   self.dx2 = dx2;
-        
-        
         self.dy1 = dy1;   self.dy2 = dy2;
-        
         self.drj1 = drj1;   self.drj2 = drj2;
-        
-        
-        
     }
     
     func twoVarSolve()->String{
