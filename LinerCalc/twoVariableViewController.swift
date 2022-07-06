@@ -70,14 +70,10 @@ class twoVariableViewController: UIViewController {
         
         let dx1 = Float(twox1Field.text!)
         let dx2 = Float(twox2Field.text!)
-        
         let dy1 = Float(twoy1Fied.text!)
         let dy2 = Float(twoy2Field.text!)
-        
-     
         let drj1 = Float(tworj1Field.text!)
         let drj2 = Float(tworj2Field.text!)
-        
         
         
         let twoMod = twoVarModel(dx1: dx1 ?? 0, dx2: dx2 ?? 0,  dy1: dy1 ?? 0, dy2: dy2 ?? 0,  drj1: drj1 ?? 0, drj2: drj2 ?? 0)
@@ -94,8 +90,6 @@ class twoVariableViewController: UIViewController {
         title = "Two variable calculator"
 
         // Do any additional setup after loading the view.
-        
-        
         
     }
     
